@@ -49,6 +49,20 @@ textarea {
 mark {
   background: none; }
 
+/*万能清除法*/
+.clear {
+  zoom: 1;
+  /*ie才能识别 解决ie的高度塌陷问题*/ }
+
+.clear:before {
+  content: "";
+  display: table; }
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both; }
+
 #headerWrapper .wrapper {
   background: #f5f5f5;
   padding: 5px; }
@@ -94,33 +108,171 @@ mark {
   float: left;
   padding: 0 10px;
   line-height: 24px;
-  height: 24px; }
+  height: 24px;
+  position: relative; }
 
 #headerWrapper .margin .fr li.login a {
   margin-left: 5px; }
 
+#headerWrapper .margin .fr em {
+  border-left: 1px solid #ddd;
+  height: 12px;
+  top: 6px;
+  width: 0;
+  left: 0;
+  position: absolute; }
+
 #headerWrapper .middleMargin {
   width: 980px;
-  margin: 0 auto; }
+  margin: 20px auto 0; }
 
 #headerWrapper .middleMargin .logo {
   float: left;
   background: url(../img/logo.png) no-repeat;
   display: block;
-  width: 268px;
-  height: 38px; }
+  width: 300px;
+  height: 38px;
+  margin-top: 16px; }
 
 #headerWrapper .middleMargin .search {
   float: left; }
 
+#headerWrapper .middleMargin .search #searchBox {
+  height: 30px;
+  width: 464px;
+  border: 3px solid #c00;
+  overflow: hidden;
+  overflow: hidden; }
+
+#headerWrapper .middleMargin .search #searchBox #txt {
+  width: 377px;
+  background: #fff;
+  font: 14px/20px "";
+  border: 0;
+  height: 20px;
+  float: left;
+  padding: 5px;
+  color: #999; }
+
+#headerWrapper .middleMargin .search #searchBox #btn {
+  width: 77px;
+  height: 30px;
+  background: #c00;
+  color: #fff;
+  float: left;
+  padding: 5px;
+  font: 700 14px "";
+  border: 0; }
+
+#headerWrapper .middleMargin .search .hot {
+  color: #999;
+  line-height: 18px;
+  height: 18px;
+  overflow: hidden;
+  margin-top: 5px; }
+
 #headerWrapper .middleMargin .search .hot dt {
-  float: left; }
+  float: left;
+  font-weight: 500; }
 
 #headerWrapper .middleMargin .search .hot dd {
   float: left; }
 
+#headerWrapper .middleMargin .search .hot dd a {
+  margin-right: 10px;
+  color: #999; }
+
+#headerWrapper .middleMargin .search .hot dd a:hover {
+  color: #c00; }
+
+#headerWrapper .middleMargin .search .hot dd a.active {
+  color: #c00; }
+
 #headerWrapper .middleMargin .promise {
-  float: left; }
+  float: right;
+  width: 180px; }
 
 #headerWrapper .middleMargin .promise li {
+  float: left;
+  width: 60px; }
+
+#headerWrapper .middleMargin .promise li span {
+  text-align: center;
+  display: block;
+  margin-top: 5px; }
+
+#headerWrapper .middleMargin .promise li b {
+  background: url(../img/bg.png) no-repeat;
+  display: block;
+  height: 33px;
+  margin: 0 auto; }
+
+#headerWrapper .middleMargin .promise .protect > b {
+  background-position: -206px 0;
+  width: 30px; }
+
+#headerWrapper .middleMargin .promise .sale > b {
+  background-position: -241px 0;
+  width: 37px; }
+
+#headerWrapper .middleMargin .promise .free > b {
+  background-position: -278px 0;
+  width: 40px; }
+
+#headerWrapper .bottomMargin {
+  background: #e23639;
+  margin-top: 20px; }
+
+#headerWrapper .bottomMargin .contain {
+  width: 980px;
+  margin: 0 auto;
+  position: relative; }
+
+#headerWrapper .bottomMargin .contain .allGoods {
+  width: 225px;
+  position: relative;
+  background: #c00;
+  float: left; }
+
+#headerWrapper .bottomMargin .contain .allGoods a {
+  font: 700 14px/40px "";
+  height: 40px;
+  padding-left: 20px;
+  color: #fff; }
+
+#headerWrapper .bottomMargin .contain .allGoods b {
+  display: block;
+  width: 10px;
+  height: 6px;
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  background: url(../img/bg.png) -38px -17px no-repeat; }
+
+#headerWrapper .bottomMargin .contain .nav {
+  float: left; }
+
+#headerWrapper .bottomMargin .contain .nav ul {
+  width: 680px;
+  position: relative; }
+
+#headerWrapper .bottomMargin .contain .nav ul li {
+  float: left;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  position: relative; }
+
+#headerWrapper .bottomMargin .contain .nav ul li.ban {
+  position: absolute;
+  left: -100px;
+  z-index: -1;
+  background: #a40000; }
+
+#headerWrapper .bottomMargin .contain .nav ul li a {
+  width: 100px;
+  font: 700 14px/40px "";
+  color: #fff; }
+
+#headerWrapper .bottomMargin .contain .car {
   float: left; }

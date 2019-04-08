@@ -1,7 +1,7 @@
 
 $(function(){
 	$("#login").validate()
-})
+});
 
 class Login{
 	constructor(){
