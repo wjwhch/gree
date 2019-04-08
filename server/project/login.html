@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>登录</title>
+		
+		<link rel="stylesheet" type="text/css" href="../libs/bootstrap.css" />
+		<link rel="stylesheet" type="text/css" href="../css/loginStyle.css"/>
+	</head>
+	<body>
+		<header class="wrapper mt10 clearfix">
+			<a href="#" class="logo"><img src="../img/logo.png"/></a>
+		</header>
+		<section class="wrapper mt30 clearfix">
+			<div class="landbox">
+				<h3>
+					<span>用户登录</span>
+					<strong>还没有账号？去<a href="register.html">注册</a>></strong>
+				</h3>
+				<form id="login" method="post" name="login">
+					<ul>
+						<li><label class="origin"><b>*</b>登录名：</label><i class="geren"></i><input id="user" type="text" placeholder="邮箱/手机号/用户名" class="landboxinput required"/></li>
+						<li><label class="origin"><b>*</b>密码：</label><i class="mima"></i><input id="pass" type="password" placeholder="密码" class="landboxinput"/</li>
+						<li><input type="checkbox" name="remember" id="remember"/><span>记住密码</span><a href="#" class="forget-password">忘记密码 ? </a></li>
+					</ul>
+					<input type="button" name="sigin-in-button" id="btn" value="登录" /><span id="result"></span>
+				</form>
+				<h2><span>快速登录</span></h2>
+				<div class="quicklanding clearfix">
+					<a href="#" class="qq"></a>
+					<a href="#" class="weibo"></a>
+					<a href="#" class="wechart"></a>
+				</div>
+			</div>
+			<div class="right-espot">
+				<a href="#"><img src="../img/aSD1.jpg"/></a>
+			</div>
+		</section>
+	</body>
+	<script src="../libs/jquery.2.2.4.js" type="text/javascript" charset="utf-8"></script>
+	<!--<script src="libs/require.js" data-main="js/main"></script>-->
+	<script src="../js/login-judge.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../libs/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../libs/jquery.validate.messages_zh.js" type="text/javascript" charset="utf-8"></script>
+</html>
