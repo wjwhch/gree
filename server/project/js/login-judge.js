@@ -24,22 +24,24 @@ class Login{
 				pass:$("#pass").val()
 			},
 			success:function(res){
-				console.log(res);
-//				switch(res){
-//					case "0":
-//						$("#result").html("用户名或密码错误");
-//						$("#user").css({background:"pink"});
-//						$("#pass").css({background:"pink"})
-//						setTimeout(()=>{
-//							$("#user").css({background:"none"})
+				var str = JSON.parse(res);
+				switch(str.code){
+					case 0:
+						$(".loginJudge").html("用户名或密码错误");
+						$(".landboxinput").css({background:"pink"});
+//						$("#pass").css({background:"pink"});
+//						$("#pass2").css({background:"pink"});
+						setTimeout(()=>{
+							$(".landboxinput").css({background:"none"})
+							$(".judge").html("");
 //							$("#pass").css({background:"none"})		
-//						},1000)
-//						break;
-//					case "1":
-//						$("#result").html("请重新输入");break;
-//					default:
-//						window.location.href="index.html";break;
-//				}
+//							$("#pass2").css({background:"none"})		
+						},2000)
+						break;
+					case 1:
+						$("#result").html("请重新输入");
+						window.location.href="index.html";break;
+				}
 			}
 		});
 	}

@@ -180,6 +180,13 @@ section .landbox #login ul li .forget-password {
   margin-left: 165px;
   line-height: 22px; }
 
+.loginJudge {
+  display: block;
+  width: 100px;
+  color: #f00;
+  float: left;
+  height: 34px; }
+
 section .landbox #register-agree {
   margin-left: 104px;
   height: 40px; }
@@ -253,3 +260,34 @@ section .right-espot {
 section .right-espot a img {
   display: block;
   height: 470px; }
+
+.alertBox {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 400px;
+  height: 280px;
+  background: #ddd;
+  color: #999;
+  text-align: center;
+  display: none; }
+
+.alertBox span {
+  font: 20px/10 "";
+  display: block; }
+
+.alertBox input {
+  position: absolute;
+  left: 0;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  color: #fff;
+  background: #99f;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0;
+  border: 0; }
